@@ -1,0 +1,12 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Add margin to the "branding" and hamburger menu */
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}

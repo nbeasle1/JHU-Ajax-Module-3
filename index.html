@@ -1,50 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food, Inc.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
 
-    <!-- We'll need to add popper/jquery manually, but we can do that later -->
+    <!-- CDN links to required libs (jquery, popper, bootstrap) -->
     <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- Local css -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-expand-md border-bottom border-bottom">
+        <div class="container-fluid p-0">
             <!-- Branding-->
             <a href="index.html" class="navbar-brand">Food, Inc.</a>
-
             <!-- Dropdown button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-                <!-- Navbar contents -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Chicken</a>
+            <!-- Navbar contents -->
+            <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0 d-lg-none d-md-none">
+                    <li class="nav-item border-top">
+                        <a href="#chicken" class="nav-link text-center border-bottom">Chicken</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Beef</a>
+                        <a href="#beef" class="nav-link text-center border-bottom">Beef</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Sushi</a>
+                        <a href="#sushi" class="nav-link text-center ">Sushi</a>
                     </li>
                 </ul>
             </div>
-            
         </div>
     </nav>
-
+    <!-- Body Contents-->
+    <div class="container-fluid px-5">
+        <h1 id="menutitle" class="text-center mt-5 mb-5">Our Menu</h1>
+        <div class="row">
+            <div class="container-fluid col-lg-4 col-md-6 col-xs-12">
+                <div id="chicken" class="card mb-5 bg-secondary-subtle rounded-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Chicken</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi autem inventore, itaque
+                                molestiae maxime ratione repellat quod delectus odio? Praesentium culpa quo perspiciatis
+                                illo ad nisi? Unde doloribus eius ratione ullam magnam delectus possimus nobis saepe
+                                perferendis ducimus, ex veniam eum ut, alias vitae ipsam reprehenderit. Delectus maiores
+                                alias impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                quis pariatur doloribus doloremque rem distinctio at aperiam maiores, accusamus
+                                voluptates esse? Possimus officia consequatur voluptas saepe quos illo, repellendus modi
+                                asperiores itaque deserunt. Tempora placeat quam, tempore corrupti vitae exercitationem
+                                porro quas? Neque asperiores ratione, vel distinctio, suscipit, amet at sequi in illo
+                                doloribus dolor illum commodi a accusantium soluta repellendus. Necessitatibus, qui
+                                corporis repellendus vitae quaerat voluptatibus nisi asperiores repudiandae temporibus
+                                ipsa quam eos optio, incidunt ab, architecto corrupti sed ipsum magnam non adipisci
+                                alias. Expedita minima accusamus ratione blanditiis distinctio adipisci fugit nulla illo
+                                soluta ipsam debitis corporis ut molestiae quod, amet laborum ullam beatae quis culpa
+                                sed vero ab! Velit in ratione impedit minima tenetur nobis ipsam libero consectetur
+                                autem dolorum eos fuga, quae doloremque non inventore consequuntur eaque ex aliquam odio
+                                voluptas expedita! Reprehenderit vel quasi quae repellendus soluta nulla unde, magni
+                                voluptatem ab, optio magnam sint tempora eaque dolorem. Laboriosam mollitia dolorem
+                                consequatur ullam temporibus, repudiandae natus veniam sit illo numquam provident amet
+                                quibusdam magni aperiam libero quae veritatis laudantium ratione! Consectetur deserunt
+                                doloremque praesentium nesciunt quisquam atque cumque, fugit commodi eligendi
+                                perferendis voluptas optio neque asperiores dolores nostrum quod minima velit quam sint.
+                                Nam itaque qui quas minima nulla dolore exercitationem reiciendis consequatur sequi,
+                                assumenda dolor natus commodi quae dolores sapiente aut earum non accusantium fugit
+                                iusto corporis officiis nisi ex animi! Fuga, accusamus dolore sint nisi assumenda ullam
+                                praesentium inventore autem cum odit dignissimos hic, eligendi provident voluptates
+                                earum nostrum numquam cumque molestiae magnam eveniet quos impedit? Amet accusamus
+                                tenetur ut earum provident at ad reprehenderit qui, inventore non doloremque porro
+                                voluptate iure repellat vero consequuntur debitis voluptatem sequi alias! Saepe, minus
+                                illo! Dolore autem adipisci ea esse sunt exercitationem eum, eos optio quam est
+                                consequatur amet odit, veritatis omnis fugit reprehenderit quis soluta! Labore natus
+                                dolor impedit corporis neque laudantium eum perspiciatis! Alias perferendis tenetur
+                                explicabo atque similique temporibus impedit! Quibusdam officiis ab ipsa modi rem
+                                placeat omnis, maxime culpa ea architecto facilis. Necessitatibus perspiciatis iste
+                                explicabo repudiandae facilis? Mollitia dicta eos reiciendis laboriosam enim ducimus
+                                aspernatur nihil quasi, minus placeat. Inventore architecto a mollitia sequi, ut placeat
+                                natus illum? Dolorum consectetur reiciendis culpa quo, necessitatibus molestiae maiores
+                                nulla laboriosam esse aliquid sit officia ea aspernatur corporis eum iste iure odio
+                                minus deserunt voluptates laborum vero pariatur. Harum facilis non repudiandae vitae,
+                                sunt voluptate? Hic sint ipsum nobis corporis, earum nisi? Possimus rerum, facilis
+                                dignissimos consequuntur numquam ut magni fugiat inventore delectus at veniam ducimus
+                                minima aut, necessitatibus omnis tempora mollitia beatae nam quasi maiores, rem laborum
+                                fuga. Similique perferendis repellendus consequuntur quia quos dolor illum sequi
+                                accusamus. Ut sequi quo, rerum similique facere ab voluptatibus repellendus beatae
+                                exercitationem, cum aliquam ex expedita inventore esse dolorem fugit impedit provident
+                                debitis sed corrupti, minus ad ipsa perspiciatis? Sit temporibus blanditiis vel maiores
+                                optio officiis quos ab, animi fugit! Nemo placeat sit similique quidem distinctio. Quis
+                                ipsa aspernatur vero odit mollitia maiores error quo cupiditate aliquam doloremque
+                                voluptates esse, incidunt nesciunt similique unde id!</p>
+                            <span>(End of Chicken section)</span>
+                            <a href="#menutitle">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-lg-4 col-md-6 col-xs-12">
+                <div id="beef" class="card mb-5 bg-secondary-subtle rounded-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Beef</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi autem inventore, itaque
+                                molestiae maxime ratione repellat quod delectus odio? Praesentium culpa quo perspiciatis
+                                illo ad nisi? Unde doloribus eius ratione ullam magnam delectus possimus nobis saepe
+                                perferendis ducimus, ex veniam eum ut, alias vitae ipsam reprehenderit. Delectus maiores
+                                alias impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                quis pariatur doloribus doloremque rem distinctio at aperiam maiores, accusamus
+                                voluptates esse? Possimus officia consequatur voluptas saepe quos illo, repellendus modi
+                                asperiores itaque deserunt. Tempora placeat quam, tempore corrupti vitae exercitationem
+                                porro quas? Neque asperiores ratione, vel distinctio, suscipit, amet at sequi in illo
+                                doloribus dolor illum commodi a accusantium soluta repellendus. Necessitatibus, qui
+                                corporis repellendus vitae quaerat voluptatibus nisi asperiores repudiandae temporibus
+                                ipsa quam eos optio, incidunt ab, architecto corrupti sed ipsum magnam non adipisci
+                                alias. Expedita minima accusamus ratione blanditiis distinctio adipisci fugit nulla illo
+                                soluta ipsam debitis corporis ut molestiae quod, amet laborum ullam beatae quis culpa
+                                sed vero ab! Velit in ratione impedit minima tenetur nobis ipsam libero consectetur
+                                autem dolorum eos fuga, quae doloremque non inventore consequuntur eaque ex aliquam odio
+                                voluptas expedita! Reprehenderit vel quasi quae repellendus soluta nulla unde, magni
+                                voluptatem ab, optio magnam sint tempora eaque dolorem. Laboriosam mollitia dolorem
+                                consequatur ullam temporibus, repudiandae natus veniam sit illo numquam provident amet
+                                quibusdam magni aperiam libero quae veritatis laudantium ratione! Consectetur deserunt
+                                doloremque praesentium nesciunt quisquam atque cumque, fugit commodi eligendi
+                                perferendis voluptas optio neque asperiores dolores nostrum quod minima velit quam sint.
+                                Nam itaque qui quas minima nulla dolore exercitationem reiciendis consequatur sequi,
+                                assumenda dolor natus commodi quae dolores sapiente aut earum non accusantium fugit
+                                iusto corporis officiis nisi ex animi! Fuga, accusamus dolore sint nisi assumenda ullam
+                                praesentium inventore autem cum odit dignissimos hic, eligendi provident voluptates
+                                earum nostrum numquam cumque molestiae magnam eveniet quos impedit? Amet accusamus
+                                tenetur ut earum provident at ad reprehenderit qui, inventore non doloremque porro
+                                voluptate iure repellat vero consequuntur debitis voluptatem sequi alias! Saepe, minus
+                                illo! Dolore autem adipisci ea esse sunt exercitationem eum, eos optio quam est
+                                consequatur amet odit, veritatis omnis fugit reprehenderit quis soluta! Labore natus
+                                dolor impedit corporis neque laudantium eum perspiciatis! Alias perferendis tenetur
+                                explicabo atque similique temporibus impedit! Quibusdam officiis ab ipsa modi rem
+                                placeat omnis, maxime culpa ea architecto facilis. Necessitatibus perspiciatis iste
+                                explicabo repudiandae facilis? Mollitia dicta eos reiciendis laboriosam enim ducimus
+                                aspernatur nihil quasi, minus placeat. Inventore architecto a mollitia sequi, ut placeat
+                                natus illum? Dolorum consectetur reiciendis culpa quo, necessitatibus molestiae maiores
+                                nulla laboriosam esse aliquid sit officia ea aspernatur corporis eum iste iure odio
+                                minus deserunt voluptates laborum vero pariatur. Harum facilis non repudiandae vitae,
+                                sunt voluptate? Hic sint ipsum nobis corporis, earum nisi? Possimus rerum, facilis
+                                dignissimos consequuntur numquam ut magni fugiat inventore delectus at veniam ducimus
+                                minima aut, necessitatibus omnis tempora mollitia beatae nam quasi maiores, rem laborum
+                                fuga. Similique perferendis repellendus consequuntur quia quos dolor illum sequi
+                                accusamus. Ut sequi quo, rerum similique facere ab voluptatibus repellendus beatae
+                                exercitationem, cum aliquam ex expedita inventore esse dolorem fugit impedit provident
+                                debitis sed corrupti, minus ad ipsa perspiciatis? Sit temporibus blanditiis vel maiores
+                                optio officiis quos ab, animi fugit! Nemo placeat sit similique quidem distinctio. Quis
+                                ipsa aspernatur vero odit mollitia maiores error quo cupiditate aliquam doloremque
+                                voluptates esse, incidunt nesciunt similique unde id!</p>
+                            <span>(End of Chicken section)</span>
+                            <a href="#menutitle">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-lg-4 col-md-12 col-xs-12">
+                <div id="sushi" class="card mb-5 bg-secondary-subtle rounded-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Sushi</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi autem inventore, itaque
+                                molestiae maxime ratione repellat quod delectus odio? Praesentium culpa quo perspiciatis
+                                illo ad nisi? Unde doloribus eius ratione ullam magnam delectus possimus nobis saepe
+                                perferendis ducimus, ex veniam eum ut, alias vitae ipsam reprehenderit. Delectus maiores
+                                alias impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                                quis pariatur doloribus doloremque rem distinctio at aperiam maiores, accusamus
+                                voluptates esse? Possimus officia consequatur voluptas saepe quos illo, repellendus modi
+                                asperiores itaque deserunt. Tempora placeat quam, tempore corrupti vitae exercitationem
+                                porro quas? Neque asperiores ratione, vel distinctio, suscipit, amet at sequi in illo
+                                doloribus dolor illum commodi a accusantium soluta repellendus. Necessitatibus, qui
+                                corporis repellendus vitae quaerat voluptatibus nisi asperiores repudiandae temporibus
+                                ipsa quam eos optio, incidunt ab, architecto corrupti sed ipsum magnam non adipisci
+                                alias. Expedita minima accusamus ratione blanditiis distinctio adipisci fugit nulla illo
+                                soluta ipsam debitis corporis ut molestiae quod, amet laborum ullam beatae quis culpa
+                                sed vero ab! Velit in ratione impedit minima tenetur nobis ipsam libero consectetur
+                                autem dolorum eos fuga, quae doloremque non inventore consequuntur eaque ex aliquam odio
+                                voluptas expedita! Reprehenderit vel quasi quae repellendus soluta nulla unde, magni
+                                voluptatem ab, optio magnam sint tempora eaque dolorem. Laboriosam mollitia dolorem
+                                consequatur ullam temporibus, repudiandae natus veniam sit illo numquam provident amet
+                                quibusdam magni aperiam libero quae veritatis laudantium ratione! Consectetur deserunt
+                                doloremque praesentium nesciunt quisquam atque cumque, fugit commodi eligendi
+                                perferendis voluptas optio neque asperiores dolores nostrum quod minima velit quam sint.
+                                Nam itaque qui quas minima nulla dolore exercitationem reiciendis consequatur sequi,
+                                assumenda dolor natus commodi quae dolores sapiente aut earum non accusantium fugit
+                                iusto corporis officiis nisi ex animi! Fuga, accusamus dolore sint nisi assumenda ullam
+                                praesentium inventore autem cum odit dignissimos hic, eligendi provident voluptates
+                                earum nostrum numquam cumque molestiae magnam eveniet quos impedit? Amet accusamus
+                                tenetur ut earum provident at ad reprehenderit qui, inventore non doloremque porro
+                                voluptate iure repellat vero consequuntur debitis voluptatem sequi alias! Saepe, minus
+                                illo! Dolore autem adipisci ea esse sunt exercitationem eum, eos optio quam est
+                                consequatur amet odit, veritatis omnis fugit reprehenderit quis soluta! Labore natus
+                                dolor impedit corporis neque laudantium eum perspiciatis! Alias perferendis tenetur
+                                explicabo atque similique temporibus impedit! Quibusdam officiis ab ipsa modi rem
+                                placeat omnis, maxime culpa ea architecto facilis. Necessitatibus perspiciatis iste
+                                explicabo repudiandae facilis? Mollitia dicta eos reiciendis laboriosam enim ducimus
+                                aspernatur nihil quasi, minus placeat. Inventore architecto a mollitia sequi, ut placeat
+                                natus illum? Dolorum consectetur reiciendis culpa quo, necessitatibus molestiae maiores
+                                nulla laboriosam esse aliquid sit officia ea aspernatur corporis eum iste iure odio
+                                minus deserunt voluptates laborum vero pariatur. Harum facilis non repudiandae vitae,
+                                sunt voluptate? Hic sint ipsum nobis corporis, earum nisi? Possimus rerum, facilis
+                                dignissimos consequuntur numquam ut magni fugiat inventore delectus at veniam ducimus
+                                minima aut, necessitatibus omnis tempora mollitia beatae nam quasi maiores, rem laborum
+                                fuga. Similique perferendis repellendus consequuntur quia quos dolor illum sequi
+                                accusamus. Ut sequi quo, rerum similique facere ab voluptatibus repellendus beatae
+                                exercitationem, cum aliquam ex expedita inventore esse dolorem fugit impedit provident
+                                debitis sed corrupti, minus ad ipsa perspiciatis? Sit temporibus blanditiis vel maiores
+                                optio officiis quos ab, animi fugit! Nemo placeat sit similique quidem distinctio. Quis
+                                ipsa aspernatur vero odit mollitia maiores error quo cupiditate aliquam doloremque
+                                voluptates esse, incidunt nesciunt similique unde id!</p>
+                            <span>(End of Chicken section)</span>
+                            <a href="#menutitle">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
